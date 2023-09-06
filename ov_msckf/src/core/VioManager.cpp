@@ -265,7 +265,8 @@ void VioManager::track_image_and_update(const ov_core::CameraData &message_const
     assert(message_const.sensor_ids.at(i) != message_const.sensor_ids.at(i + 1));
   }
 
-  // Downsample if we are downsampling
+  // Downsample if we are downsampling  
+  // for what ?
   ov_core::CameraData message = message_const;
   for (size_t i = 0; i < message.sensor_ids.size() && params.downsample_cameras; i++) {
     cv::Mat img = message.images.at(i);
