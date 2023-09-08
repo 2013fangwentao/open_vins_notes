@@ -75,7 +75,8 @@ struct InertialInitializerOptions {
   /// If we should perform dynamic initialization
   bool init_dyn_use = false;
 
-  /// If we should optimize and recover the calibration in our MLE
+  /// If we should optimize and recover the calibration in our MLE 
+  //TODO(little fang) MLE极大似然估计
   bool init_dyn_mle_opt_calib = false;
 
   /// Max number of MLE iterations for dynamic initialization
